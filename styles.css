@@ -19,7 +19,12 @@ section {
 .card img {
   max-width: 100%;
 }
+
+.card-contenter {
+  padding: 10px;
+}
 /* }l\object fit for contain */
+
 @media (max-width: 800px){
 div {
 grid-template-columns: 1fr
