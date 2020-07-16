@@ -20,12 +20,11 @@ section {
   max-width: 100%;
 }
 
-.card-contenter {
+.card-content {
   padding: 10px;
 }
 /* }l\object fit for contain */
-
-@media (max-width: 800px){
-div {
+@media (max-width: 100px){
+.section {
 grid-template-columns: 1fr
 }
