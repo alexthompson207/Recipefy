@@ -2,6 +2,10 @@
 
 ## Introduction
 
+### Website Create By JP Carey
+
+[My GitHub Repository](https://github.com/jaypeasee?tab=repositories)
+
 This was my second solo project and first project where I created a page from scratch using HTML and CSS.
 
 The prompt was to create a new page based on an original design. The structural specs and elements of the page needed to match the layout of the provided design. That said, I had a creative license for some styles such as images, copy, icons and color palette. See the image of the required layout below.
@@ -21,8 +25,6 @@ From there, I made a low-fidelity wireframe of the design to help conceptualize 
 From there, I was able to start organizing specific HTML tags and classes to give the page a rough structure.
 
 ## Key Concepts and Challenges
-
-## Link to Author Repository
 
 ## Acknowledgements
 
