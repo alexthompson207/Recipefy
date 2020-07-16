@@ -2,6 +2,13 @@ main {
   background-color: #fed389
 }
 
+div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
 .card {
-  background-color: #ca8150
+  background-color: #ca8150;
 }
