@@ -24,7 +24,9 @@ From there, I made a low-fidelity wireframe of the design to help conceptualize 
 
 ![Low-fidelity Wireframe of the Design](assets/wireframe.png)
 
-I was able to start organizing specific HTML tags, classes, placeholder content, and colours to give the page a rough vertical structure. I first started organizing the cards in the `<section/>` of the page, where the recipes could be found. Then I moved on to the `<nav/>`. Using the CSS grid method, I was able to align `<div>` s from each section horizontally to closer match the comp.
+I was able to start organizing specific HTML tags, classes, placeholder content, and colours to give the page a rough vertical structure. I first started organizing the cards in the `<section/>` of the page, where the recipes could be found. Then I moved on to the `<nav/>`. Using the CSS grid method, I was able to align `<div>` s from each section horizontally to closer match the comp. See image below.
+
+![First Pass at Web Structure and Design](assets/basic-structure.png)
 
 ## Key Concepts and Challenges
 
