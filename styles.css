@@ -44,6 +44,7 @@ section {
   margin-right: 0px;
   padding-top: 20px;
   padding-bottom: 100px;
+  max-width: 1000px;
 }
 
 a {
@@ -58,7 +59,7 @@ h1 {
 
 .card {
   background-color: #ca8150;
-  max-width: 250px;
+  max-width: 300px;
   overflow-wrap: break-word;
 }
 
@@ -77,8 +78,8 @@ h1 {
   background-color: #8d5535;
 }
 
-@media (max-width: 500px){
+@media (max-width: 800px){
 .section {
   grid-template-rows: 1fr
-  }
+}
 }
