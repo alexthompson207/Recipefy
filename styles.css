@@ -34,6 +34,7 @@ nav {
 main {
   background-color: #fed389;
   color: #0a090c;
+
 }
 
 
@@ -41,11 +42,12 @@ section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 15px;
-  margin-left: 30px;
-  margin-right: 0px;
+  margin: auto;
   padding-top: 20px;
   padding-bottom: 100px;
-  max-width: 1000px;
+  width: 90%;
+  max-width:
+
 
 }
 
@@ -61,12 +63,13 @@ h1 {
 
 .card {
   background-color: #ca8150;
-  max-width: 300px;
   overflow-wrap: break-word;
 }
 
 .card img {
   max-width: 100%;
+  max-height: 33%;
+
 }
 
 .card-content {
@@ -80,7 +83,7 @@ h1 {
   background-color: #8d5535;
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1300px){
 section {
   grid-template-columns: repeat(2, 1fr)
 }
