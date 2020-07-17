@@ -5,7 +5,7 @@ main {
 section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 13px;
+  grid-gap: 15px;
   margin-left: 30px;
   margin-right: 0px;
   padding-top: 20px;
@@ -20,6 +20,7 @@ h1 {
 .card {
   background-color: #ca8150;
   max-width: 250px;
+  overflow-wrap: break-word;
 }
 
 .card img {
@@ -34,5 +35,6 @@ h1 {
 
 @media (max-width: 500px){
 .section {
-grid-template-rows: 1fr
+  grid-template-rows: 1fr
+  }
 }
