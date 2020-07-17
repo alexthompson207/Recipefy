@@ -1,3 +1,9 @@
+nav {
+  display: grid;
+
+  background-color: #3d1520
+}
+
 main {
   background-color: #fed389
 }
@@ -10,6 +16,10 @@ section {
   margin-right: 0px;
   padding-top: 20px;
   padding-bottom: 100px;
+}
+
+a {
+  color: #0a090c
 }
 
 h1 {
@@ -31,6 +41,11 @@ h1 {
   padding-left: 10px;
   padding-right: 10px;
 
+}
+
+.card-link-box {
+  display: block;
+  background-color: #8d5535;
 }
 
 @media (max-width: 500px){
