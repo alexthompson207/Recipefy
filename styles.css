@@ -78,8 +78,8 @@ h1 {
   background-color: #8d5535;
 }
 
-@media (max-width: 800px){
-.section {
-  grid-template-rows: 1fr
+@media (max-width: 1000px){
+section {
+  grid-template-columns: 1fr
 }
 }
