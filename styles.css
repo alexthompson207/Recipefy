@@ -8,27 +8,50 @@ nav {
   color: #fed389;
 }
 
+nav img {
+  width: 40px;
+  height: 40px;
+  filter: invert(77%) sepia(89%) saturate(272%) hue-rotate(329deg) brightness(101%) contrast(99%);
+}
+
 #nav-box-1 {
   grid-column: span 5;
   text-align: right;
+  font-size: 20px;
+}
+
+#nav-box-1 p {
+
+}
+
+#nav-box-1 img {
 
 }
 
 #nav-box-2 {
-  grid-column:
+
 }
 
 #nav-box-3 {
-  grid-column:
+
 }
 
 #nav-box-4 {
-  grid-column:
+
 }
 
 #nav-box-5 {
   grid-column: span 2;
   text-align: right;
+  font-size: 20px;
+}
+
+#nav-box-5 h2 {
+
+}
+
+#nav-box-5 img {
+
 }
 
 main {
