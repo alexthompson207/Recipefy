@@ -28,12 +28,32 @@ I was able to start organizing specific HTML tags, classes, placeholder content,
 
 ![First Pass at Web Structure and Design](assets/basic-structure.png)
 
+Using additional styling techniques such as `grid-gap`, `font-sizes`, and then a `flex` method within my `grid` `<nav/>` aligned the elements closer to the comp and in finer detail.
+
+I changed the content and images on 7 other cards to make sure that I could standardize the cards dynamically.
+
+![Added Content, Styling, and Flex](assets/detail-dt.png)
+
 ## Key Concepts and Challenges
+
+### Concepts:
+
+The `<nav/>` and the `<section/>` of cards were structured using `grid`. This allowed for a flexible, yet simple implementation. Within the `<nav/>`, I used  `flex` to align the elements properly within their grids. I mostly used relative measurement units to allow the page to be fluid and used `media queries` for multiple breakpoints to make the page more responsive.
+
+### Challenges:
+
+1. Using `flex` within the children of `grid` elements on the `<nav/>` was tricky to play with at first. I had to use a lot of custom padding aroung elements and icons.
+
+2. The `<nav/>` was especially tricky to condense in smaller screen sizes. It would extend the width of the page and make all the elements below unresponsive to mobile.
+
+   ![Mobile not condensing in the nav](assets/bad-mobile.png)
+
+3. The images were different sizes, making it hard to format them all universally and give them a standard relative max-width and height. I had to roughly crop some of them to get them to fit better.
+
+4. QAing in Firefox and Safari as well as Chrome added an extra level of challenges, especially when they arised.
 
 ## Acknowledgements
 
 - My instructors - Casey DallaValle, Scott Ertmer, and Hannah Hudson for lectures on basic HTML, CSS and wireframing, and the independent lesson plans they provided for Flexbox and Grid displays.
 - My mentors - Isaac Chabon, Kristen Cabrera, and David Becker - Who helped with me better understand the concepts of flexbox and grids styling displays in CSS.
 - Other members of my cohort at Turing for providing an inclusive but creative atmosphere that allowed for free and open advice.
-
-## Additional Information Conerning the Project
