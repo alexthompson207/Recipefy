@@ -41,12 +41,12 @@ main {
 section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 15px;
+  grid-row-gap: 45px;
+  grid-column: 15px;
   margin: auto;
   padding-top: 20px;
   padding-bottom: 100px;
   width: 90%;
-
 
 }
 
@@ -64,6 +64,7 @@ h1 {
   background-color: #ca8150;
   overflow-wrap: break-word;
   position: relative;
+  width: 90%
 }
 
 .card-image {
@@ -126,13 +127,13 @@ h1 {
 
 }
 
-@media (max-width: 1450px) {
+@media (max-width: 1800px) {
 section {
   grid-template-columns: repeat(2, 1fr)
 }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 875px) {
 section {
   grid-template-columns: repeat(1, 1fr)
 }
