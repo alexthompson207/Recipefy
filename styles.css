@@ -40,16 +40,15 @@ nav img {
   grid-column: span 5;
   grid-column-start: 5;
   font-size: 20px;
-  display: flex;
-  justify-content: flex-end;
+  display: relative;
 }
 
 #nav-box-1 p {
   font-family: "Permanent Marker", cursive;
+
 }
 
 #nav-box-1 img {
-
 }
 
 #nav-box-2 {
