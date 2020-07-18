@@ -1,4 +1,9 @@
 
+p {
+  font-family: "Caveat", cursive;
+  padding-left: 15px;
+}
+
 nav {
   display: grid;
   grid-template-columns: (4, 1fr);
@@ -21,7 +26,7 @@ nav img {
 }
 
 #nav-box-1 p {
-
+  font-family: "Permanent Marker", cursive;
 }
 
 #nav-box-1 img {
@@ -32,26 +37,43 @@ nav img {
 
 }
 
+#nav-box-2 h4 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 1.5em;
+}
+
 #nav-box-3 {
 
 }
+
+#nav-box-3 h4 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 1.5em;
+}
+
 
 #nav-box-4 {
 
 }
 
+#nav-box-4 h4 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 1.5em;
+}
+
 #nav-box-5 {
   grid-column: span 2;
   text-align: right;
-  font-size: 20px;
+  font-size: 1.75em;
 }
 
 #nav-box-5 h2 {
-
+  font-family: "Permanent Marker", cursive;
 }
 
 #nav-box-5 img {
-
+  height: 2em;
+  width: 2.25em;
 }
 
 main {
@@ -92,7 +114,7 @@ h1 {
 
 .card-image {
   max-width: 100%;
-  opacity: .70
+  opacity: .70;
 
 }
 
@@ -114,11 +136,13 @@ h1 {
 .card-followers p {
   font-size: 1.5em;
   margin: auto;
+  font-family: "Permanent Marker", cursive;
 }
 
 .card-followers h3 {
   font-size: 2em;
   margin: auto;
+  font-family: "Permanent Marker", cursive;
 }
 
 .card-content {
@@ -129,18 +153,21 @@ h1 {
 
 .card-content h3 {
   font-size: 1.5em;
+  font-family: "Permanent Marker", cursive;
 }
 
 .card-content h4 {
   font-size: 1.5em;
+  font-family: "Permanent Marker", cursive;
 }
 
 .card-content p {
-  font-size: 1.5em
+  font-size: 1.75em
 }
 
 .card-content a {
   font-size: 1.25em;
+  font-family: "Caveat", cursive;
 }
 
 .card-link-box {
