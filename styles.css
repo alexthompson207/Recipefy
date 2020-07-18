@@ -63,11 +63,24 @@ h1 {
 .card {
   background-color: #ca8150;
   overflow-wrap: break-word;
+  position: relative;
 }
 
-.card img {
+.card-image {
   max-width: 100%;
-  max-height: 33%;
+  opacity: .70
+
+}
+
+.icons {
+
+}
+
+.card-followers {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #3d1520
 
 }
 
@@ -80,6 +93,8 @@ h1 {
 .card-link-box {
   display: block;
   background-color: #8d5535;
+  padding: 10px;
+
 }
 
 @media (max-width: 1450px) {
