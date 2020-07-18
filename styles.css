@@ -82,16 +82,41 @@ h1 {
 
 .card-followers {
   position: absolute;
-  top: 15px;
-  right: 15px;
-  color: #3d1520
+  top: 5px;
+  right: 10px;
+  color: #fed389
+}
 
+.card-followers p {
+  font-size: 1.5em;
+  margin: auto;
+}
+
+.card-followers h3 {
+  font-size: 2em;
+  margin: auto;
 }
 
 .card-content {
   padding-left: 10px;
   padding-right: 10px;
 
+}
+
+.card-content h3 {
+  font-size: 1.5em;
+}
+
+.card-content h4 {
+  font-size: 1.5em;
+}
+
+.card-content p {
+  font-size: 1.5em
+}
+
+.card-content a {
+  font-size: 1.25em;
 }
 
 .card-link-box {
