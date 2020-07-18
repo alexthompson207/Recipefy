@@ -23,7 +23,7 @@ h3 {
 
 nav {
   display: grid;
-  grid-template-columns: (4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   background-color: #3d1520;
   padding-left: 30px;
   padding-right: 30px;
@@ -40,51 +40,75 @@ nav img {
   grid-column: span 5;
   grid-column-start: 5;
   font-size: 20px;
-  display: relative;
+  display: flex;
+  justify-content: flex-end;
 }
 
 #nav-box-1 p {
   font-family: "Permanent Marker", cursive;
+  display: flex;
+  padding-right: 15px;
+  margin-top: 20px;
 
 }
 
 #nav-box-1 img {
+  margin-top: 15px;
 }
 
 #nav-box-2 {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  flex-direction: row;
+  align-items: flex-end;
 }
 
 #nav-box-2 h4 {
   font-family: "Permanent Marker", cursive;
   font-size: 1.5em;
+  margin-bottom: 15px;
+  padding-right: 15px;
+}
+
+#nav-box-2 img {
+  margin-bottom: 10px;
 }
 
 #nav-box-3 {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-direction: row;
+  align-items: flex-end;
+
 }
 
 #nav-box-3 h4 {
   font-family: "Permanent Marker", cursive;
   font-size: 1.5em;
+  margin-bottom: 15px;
+  padding-right: 15px;
+}
+
+#nav-box-3 img {
+  margin-bottom: 10px;
 }
 
 
 #nav-box-4 {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  align-items: flex-end;
 
 }
 
 #nav-box-4 h4 {
   font-family: "Permanent Marker", cursive;
   font-size: 1.5em;
+  margin-bottom: 15px;
+  padding-right: 15px;
+}
+
+#nav-box-4 img {
+  margin-bottom: 10px;
 }
 
 #nav-box-5 {
@@ -93,15 +117,20 @@ nav img {
   font-size: 1.75em;
   display: flex;
   justify-content: flex-end;
+  align-items: flex-end;
 }
 
 #nav-box-5 h2 {
   font-family: "Permanent Marker", cursive;
+  margin-bottom: 10px;
+  padding-right: 15px;
 }
 
 #nav-box-5 img {
   height: 2em;
   width: 2.25em;
+  margin-bottom: 10px;
+
 }
 
 main {
@@ -137,12 +166,14 @@ h1 {
   background-color: #ca8150;
   overflow-wrap: break-word;
   position: relative;
-  width: 90%
+  width: 90%;
 }
 
 .card-image {
   max-width: 100%;
   opacity: .70;
+  height: 500px;
+  overflow: hidden;
 
 }
 
@@ -226,5 +257,21 @@ section {
 @media (max-width: 875px) {
 section {
   grid-template-columns: repeat(1, 1fr)
+}
+}
+@media (max-width: 415px) {
+section {
+  grid-template-columns: 1fr
+}
+}
+
+@media (max-width: 875px) {
+nav {
+  grid-template-columns: repeat(5, 1fr)
+}
+}
+@media (max-width: 415px) {
+nav {
+  grid-template-columns: 1fr
 }
 }
