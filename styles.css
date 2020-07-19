@@ -1,7 +1,16 @@
+body {
+  margin: 0px;
+  width: 100%;
+}
+
 h1 {
   font-family: "Permanent Marker", cursive;
   padding-top: 30px;
   padding-bottom: 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-right: 30px;
+  font-size: 3em;
 }
 
 
@@ -22,11 +31,12 @@ h3 {
 }
 
 nav {
+  max-width: 100%;
   display: grid;
-  grid-template-columns: (4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   background-color: #3d1520;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
   color: #fed389;
 }
 
@@ -40,87 +50,126 @@ nav img {
   grid-column: span 5;
   grid-column-start: 5;
   font-size: 20px;
-  display: relative;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 2em;
 }
 
 #nav-box-1 p {
   font-family: "Permanent Marker", cursive;
+  display: flex;
+  padding-right: 15px;
+  margin-top: 20px;
+  cursor: pointer;
 
 }
 
 #nav-box-1 img {
+  margin-top: 15px;
+  cursor: pointer;
 }
 
 #nav-box-2 {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-direction: row;
+  align-items: flex-end;
 }
 
 #nav-box-2 h4 {
   font-family: "Permanent Marker", cursive;
-  font-size: 1.5em;
+  font-size: 3em;
+  margin-bottom: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+}
+
+#nav-box-2 img {
+  margin-bottom: 20px;
+  cursor: pointer;
 }
 
 #nav-box-3 {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-direction: row;
+  align-items: flex-end;
+
 }
 
 #nav-box-3 h4 {
   font-family: "Permanent Marker", cursive;
-  font-size: 1.5em;
+  margin-bottom: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+  font-size: 3em;
+}
+
+#nav-box-3 img {
+  margin-bottom: 20px;
+  cursor: pointer;
 }
 
 
 #nav-box-4 {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  align-items: flex-end;
 
 }
 
 #nav-box-4 h4 {
   font-family: "Permanent Marker", cursive;
-  font-size: 1.5em;
+  margin-bottom: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+  font-size: 3em;
+}
+
+#nav-box-4 img {
+  margin-bottom: 20px;
+  cursor: pointer;
 }
 
 #nav-box-5 {
   grid-column: span 2;
   text-align: right;
-  font-size: 1.75em;
   display: flex;
   justify-content: flex-end;
+  align-items: flex-end;
 }
 
 #nav-box-5 h2 {
   font-family: "Permanent Marker", cursive;
+  margin-bottom: 10px;
+  padding-right: 15px;
+  cursor: pointer;
+  font-size: 4em;
+  margin-top: 10px;
 }
 
 #nav-box-5 img {
-  height: 2em;
-  width: 2.25em;
+  height: 4em;
+  width: 4em;
+  margin-bottom: 10px;
+  cursor: pointer;
+
 }
 
 main {
   background-color: #fed389;
   color: #0a090c;
+  width: 100%;
 
 }
-
 
 section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-row-gap: 45px;
-  grid-column: 15px;
+  grid-gap: 2%;
   margin: auto;
   padding-top: 20px;
   padding-bottom: 100px;
   width: 90%;
-
+  border-right: 0px;
 }
 
 a {
@@ -137,12 +186,13 @@ h1 {
   background-color: #ca8150;
   overflow-wrap: break-word;
   position: relative;
-  width: 90%
+  box-shadow: 0 8px 6px -6px black;
 }
 
 .card-image {
   max-width: 100%;
   opacity: .70;
+  height: 400px;
 
 }
 
@@ -152,6 +202,11 @@ h1 {
   left: 15px;
   width: 4.5em;
   height: 4.5em;
+  cursor: pointer;
+}
+
+.card-icon:hover {
+  filter: invert(8%) sepia(23%) saturate(3777%) hue-rotate(310deg) brightness(98%) contrast(94%);
 }
 
 .card-followers {
@@ -187,6 +242,7 @@ h1 {
 .card-content h4 {
   font-size: 1.5em;
   font-family: "Permanent Marker", cursive;
+  color: #3d1520;
 }
 
 .card-content p {
@@ -198,13 +254,16 @@ h1 {
   font-family: "Caveat", cursive;
 }
 
+  a:hover {
+    color: #3d1520;
+  }
+
 .card-link-box {
   display: block;
   background-color: #8d5535;
   padding: 10px;
   margin: 20px;
   border-radius: 10px;
-
 }
 
 .card h3 {
@@ -217,14 +276,101 @@ h1 {
   margin-top: 30px;
 }
 
-@media (max-width: 1800px) {
+@media (max-width: 1900px) {
 section {
-  grid-template-columns: repeat(2, 1fr)
+  grid-template-columns: repeat(2, 1fr);
+  width: 70%;
+  grid-column-gap: 10%
 }
 }
 
-@media (max-width: 875px) {
+@media (max-width: 1200px) {
+nav {
+  display: flex;
+  flex-direction: column;
+  font-size: .75em;
+}
+nav img {
+  width: 30px;
+  height: 30px;
+}
+#nav-box-1 {
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-right: 0px;
+  padding-right: 0px;
+}
+#nav-box-2 {
+  justify-content: center;
+}
+#nav-box-3 {
+  justify-content: center;
+}
+#nav-box-4 {
+  justify-content: center;
+}
+#nav-box-5 {
+  margin-bottom: 5px;
+  justify-content: center;
+}
+#nav-box-5 h2 {
+  margin-top: 10px;
+}
+h1 {
+  font-size: 2.5em;
+}
 section {
-  grid-template-columns: repeat(1, 1fr)
+  grid-template-columns: repeat(1, 1fr);
+  width: 55%;
+  grid-row-gap: .5%;
+}
+
+@media (max-width: 500px) {
+body {
+  width: 100%;
+  height: 100%
+}
+nav {
+  grid-template-rows: 1fr;
+  font-size: .5em;
+}
+
+nav img {
+  height: 20px;
+  width: 20px;
+}
+#nav-box-1 {
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-right: 0px;
+  padding-right: 0px;
+}
+#nav-box-2 {
+  justify-content: center;
+}
+#nav-box-3 {
+  justify-content: center;
+}
+#nav-box-4 {
+  justify-content: center;
+}
+#nav-box-5 {
+  margin-bottom: 5px;
+  justify-content: center;
+}
+#nav-box-5 h2 {
+  margin-top: 10px;
+}
+h1 {
+  font-size: 2em;
+}
+section {
+  grid-template-columns: 1fr;
+  grid-gap: .25%;
+  width: 90%;
+  height: 100%;
+}
+.card {
+  width: 75%;
 }
 }
