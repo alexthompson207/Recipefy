@@ -51,11 +51,13 @@ nav img {
   display: flex;
   padding-right: 15px;
   margin-top: 20px;
+  cursor: pointer;
 
 }
 
 #nav-box-1 img {
   margin-top: 15px;
+  cursor: pointer;
 }
 
 #nav-box-2 {
@@ -70,10 +72,12 @@ nav img {
   font-size: 1.5em;
   margin-bottom: 15px;
   padding-right: 15px;
+  cursor: pointer;
 }
 
 #nav-box-2 img {
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 #nav-box-3 {
@@ -88,10 +92,12 @@ nav img {
   font-size: 1.5em;
   margin-bottom: 15px;
   padding-right: 15px;
+  cursor: pointer;
 }
 
 #nav-box-3 img {
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 
@@ -107,10 +113,12 @@ nav img {
   font-size: 1.5em;
   margin-bottom: 15px;
   padding-right: 15px;
+  cursor: pointer;
 }
 
 #nav-box-4 img {
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 #nav-box-5 {
@@ -126,12 +134,14 @@ nav img {
   font-family: "Permanent Marker", cursive;
   margin-bottom: 10px;
   padding-right: 15px;
+  cursor: pointer;
 }
 
 #nav-box-5 img {
   height: 2em;
   width: 2.25em;
   margin-bottom: 10px;
+  cursor: pointer;
 
 }
 
@@ -185,6 +195,11 @@ h1 {
   left: 15px;
   width: 4.5em;
   height: 4.5em;
+  cursor: pointer;
+}
+
+.card-icon:hover {
+  filter: invert(8%) sepia(23%) saturate(3777%) hue-rotate(310deg) brightness(98%) contrast(94%);
 }
 
 .card-followers {
@@ -231,6 +246,10 @@ h1 {
   font-family: "Caveat", cursive;
 }
 
+  a:hover {
+    color: #3d1520;
+  }
+
 .card-link-box {
   display: block;
   background-color: #8d5535;
@@ -269,11 +288,11 @@ section {
 
 @media (max-width: 875px) {
 nav {
-  grid-template-columns: repeat(5, 1fr)
+  grid-template-columns: repeat(2, 1fr)
 }
 }
 @media (max-width: 415px) {
 nav {
-  grid-template-columns: 1fr
+  grid-template-columns: repeat(2, 1fr)
 }
 }
