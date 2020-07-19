@@ -1,9 +1,16 @@
+body {
+  margin: 0px;
+  width: 100%;
+}
+
 h1 {
   font-family: "Permanent Marker", cursive;
   padding-top: 30px;
   padding-bottom: 30px;
   margin-top: 0px;
   margin-bottom: 0px;
+  padding-right: 30px;
+  font-size: 3em;
 }
 
 
@@ -24,11 +31,12 @@ h3 {
 }
 
 nav {
+  max-width: 100%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   background-color: #3d1520;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
   color: #fed389;
 }
 
@@ -44,6 +52,7 @@ nav img {
   font-size: 20px;
   display: flex;
   justify-content: flex-end;
+  font-size: 2em;
 }
 
 #nav-box-1 p {
@@ -62,21 +71,20 @@ nav img {
 
 #nav-box-2 {
   display: flex;
-  flex-direction: column;
   flex-direction: row;
   align-items: flex-end;
 }
 
 #nav-box-2 h4 {
   font-family: "Permanent Marker", cursive;
-  font-size: 1.5em;
+  font-size: 3em;
   margin-bottom: 15px;
   padding-right: 15px;
   cursor: pointer;
 }
 
 #nav-box-2 img {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   cursor: pointer;
 }
 
@@ -89,14 +97,14 @@ nav img {
 
 #nav-box-3 h4 {
   font-family: "Permanent Marker", cursive;
-  font-size: 1.5em;
   margin-bottom: 15px;
   padding-right: 15px;
   cursor: pointer;
+  font-size: 3em;
 }
 
 #nav-box-3 img {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   cursor: pointer;
 }
 
@@ -110,21 +118,20 @@ nav img {
 
 #nav-box-4 h4 {
   font-family: "Permanent Marker", cursive;
-  font-size: 1.5em;
   margin-bottom: 15px;
   padding-right: 15px;
   cursor: pointer;
+  font-size: 3em;
 }
 
 #nav-box-4 img {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   cursor: pointer;
 }
 
 #nav-box-5 {
   grid-column: span 2;
   text-align: right;
-  font-size: 1.75em;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -135,11 +142,13 @@ nav img {
   margin-bottom: 10px;
   padding-right: 15px;
   cursor: pointer;
+  font-size: 4em;
+  margin-top: 10px;
 }
 
 #nav-box-5 img {
-  height: 2em;
-  width: 2.25em;
+  height: 4em;
+  width: 4em;
   margin-bottom: 10px;
   cursor: pointer;
 
@@ -148,21 +157,19 @@ nav img {
 main {
   background-color: #fed389;
   color: #0a090c;
+  width: 100%;
 
 }
-
 
 section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-row-gap: 45px;
-  grid-column: 15px;
+  grid-gap: 2%;
   margin: auto;
   padding-top: 20px;
   padding-bottom: 100px;
   width: 90%;
   border-right: 0px;
-
 }
 
 a {
@@ -179,7 +186,7 @@ h1 {
   background-color: #ca8150;
   overflow-wrap: break-word;
   position: relative;
-  width: 90%;
+  box-shadow: 0 8px 6px -6px black;
 }
 
 .card-image {
@@ -235,6 +242,7 @@ h1 {
 .card-content h4 {
   font-size: 1.5em;
   font-family: "Permanent Marker", cursive;
+  color: #3d1520;
 }
 
 .card-content p {
@@ -256,7 +264,6 @@ h1 {
   padding: 10px;
   margin: 20px;
   border-radius: 10px;
-
 }
 
 .card h3 {
@@ -269,30 +276,101 @@ h1 {
   margin-top: 30px;
 }
 
-@media (max-width: 1800px) {
+@media (max-width: 1900px) {
 section {
-  grid-template-columns: repeat(2, 1fr)
+  grid-template-columns: repeat(2, 1fr);
+  width: 70%;
+  grid-column-gap: 10%
 }
 }
 
-@media (max-width: 875px) {
+@media (max-width: 1200px) {
+nav {
+  display: flex;
+  flex-direction: column;
+  font-size: .75em;
+}
+nav img {
+  width: 30px;
+  height: 30px;
+}
+#nav-box-1 {
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-right: 0px;
+  padding-right: 0px;
+}
+#nav-box-2 {
+  justify-content: center;
+}
+#nav-box-3 {
+  justify-content: center;
+}
+#nav-box-4 {
+  justify-content: center;
+}
+#nav-box-5 {
+  margin-bottom: 5px;
+  justify-content: center;
+}
+#nav-box-5 h2 {
+  margin-top: 10px;
+}
+h1 {
+  font-size: 2.5em;
+}
 section {
-  grid-template-columns: repeat(1, 1fr)
-}
-}
-@media (max-width: 415px) {
-section {
-  grid-template-columns: 1fr
-}
+  grid-template-columns: repeat(1, 1fr);
+  width: 55%;
+  grid-row-gap: .5%;
 }
 
-@media (max-width: 875px) {
-nav {
-  grid-template-columns: repeat(2, 1fr)
+@media (max-width: 500px) {
+body {
+  width: 100%;
+  height: 100%
 }
-}
-@media (max-width: 415px) {
 nav {
-  grid-template-columns: repeat(2, 1fr)
+  grid-template-rows: 1fr;
+  font-size: .5em;
+}
+
+nav img {
+  height: 20px;
+  width: 20px;
+}
+#nav-box-1 {
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-right: 0px;
+  padding-right: 0px;
+}
+#nav-box-2 {
+  justify-content: center;
+}
+#nav-box-3 {
+  justify-content: center;
+}
+#nav-box-4 {
+  justify-content: center;
+}
+#nav-box-5 {
+  margin-bottom: 5px;
+  justify-content: center;
+}
+#nav-box-5 h2 {
+  margin-top: 10px;
+}
+h1 {
+  font-size: 2em;
+}
+section {
+  grid-template-columns: 1fr;
+  grid-gap: .25%;
+  width: 90%;
+  height: 100%;
+}
+.card {
+  width: 75%;
 }
 }
