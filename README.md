@@ -34,6 +34,12 @@ I changed the content and images on 7 other cards to make sure that I could stan
 
 ![Added Content, Styling, and Flex](assets/detail-dt.png)
 
+To make the page adaptive, I created 3 media queries for different breakpoints and mostly used relative measurement units in my CSS file. Once those breakpoints kept the structure of the page usable and consistent, I played with subtle styling such as hovers, cursors, box shadows, and font sizes.
+
+![Final product](assets/final-1.png)
+
+![Final product](assets/final-2.png)
+
 ## Key Concepts and Challenges
 
 ### Concepts:
@@ -44,13 +50,13 @@ The `<nav/>` and the `<section/>` of cards were structured using `grid`. This al
 
 1. Using `flex` within the children of `grid` elements on the `<nav/>` was tricky to play with at first. I had to use a lot of custom padding aroung elements and icons.
 
-2. The `<nav/>` was especially tricky to condense in smaller screen sizes. It would extend the width of the page and make all the elements below unresponsive to mobile.
+2. The `<nav/>` was especially tricky to condense in smaller screen sizes. It would extend the width of the page and make all the elements below unresponsive to mobile. I ultimately changed them fro column grids to row grids at my 500px media query which made the `<nav/>` tall but at least all of the elements fit on the page.
 
    ![Mobile not condensing in the nav](assets/bad-mobile.png)
 
-3. The images were different sizes, making it hard to format them all universally and give them a standard relative max-width and height. I had to roughly crop some of them to get them to fit better.
+3. The images were different sizes, making it hard to format them all universally and give them a standard relative max-width and height. I had to roughly crop some of them to get them to fit better. Part of my solution was how wide I would let the whole section of cards get when the number of columns first decreased. Another solution  was just cropping them so they were roughly the same dimensions.
 
-4. QAing in Firefox and Safari as well as Chrome added an extra level of challenges, especially when they arised.
+4. QAing in Firefox and Safari as well as Chrome added an extra level of challenges, especially when they arised. I needed to adjust my breakpoints to make the best compromise between the three,
 
 ## Acknowledgements
 
